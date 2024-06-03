@@ -9,6 +9,7 @@ const attributes = [
     'cloudCover', 'windBearing', 'precipIntensity', 'dewPoint', 'precipProbability'
 ];
 
+// LLM-Generated code Below
 // Populate dropdown menus
 var xSelect = d3.select("#xAttribute");
 var ySelect = d3.select("#yAttribute");
@@ -75,6 +76,7 @@ function createScatterPlot(data, xAttr, yAttr) {
 }
 
 // Function to create zoomable area chart
+//Citation : https://observablehq.com/@d3/zoomable-area-chart?intent=fork
 function createZoomableAreaChart(data, xAttr, yAttr) {
     const width = 928;
     const height = 500;
