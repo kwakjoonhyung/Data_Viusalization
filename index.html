@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Visualization</h1>
+        <div class="controls">
+            <label for="xAttribute">X-Axis Attribute:</label>
+            <select id="xAttribute"></select>
+
+            <label for="yAttribute">Y-Axis Attribute:</label>
+            <select id="yAttribute"></select>
+
+            <button id="plotButton">Plot Data</button>
+        </div>
+        <div id="plot"></div>
+        <div id="statistics">
+            <h2>Statistics</h2>
+            <div id="xStats">
+                <h3>X-Axis Statistics</h3>
+                <p id="xMean">Mean: </p>
+                <p id="xMedian">Median: </p>
+                <p id="xStdDev">Standard Deviation: </p>
+            </div>
+            <div id="yStats">
+                <h3>Y-Axis Statistics</h3>
+                <p id="yMean">Mean: </p>
+                <p id="yMedian">Median: </p>
+                <p id="yStdDev">Standard Deviation: </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
